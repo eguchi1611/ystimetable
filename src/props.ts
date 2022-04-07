@@ -44,7 +44,7 @@ export const textColor: { [k: string]: string } = {
   国語: "#f4cccc",
 };
 
-export const levelOptions: SelectValue[] = [
+export const levelOptions: Subject[] = [
   { label: "基礎１", value: 1 },
   { label: "基礎２", value: 2 },
   { label: "基礎３", value: 3 },
@@ -55,59 +55,57 @@ export const levelOptions: SelectValue[] = [
   { label: "基礎１３", value: 13 },
 ];
 
-export const lineHOptions: SelectValue[] = [
-  { label: "発展現代文", value: "発展現代文" },
-  { label: "標準現代文", value: "標準現代文" },
-  { label: "実践英会話", value: "実践英会話" },
-  { label: "数学Ⅲ", value: "数学Ⅲ" },
-  { label: "数学演習", value: "数学演習" },
-];
-
-export const lineIOptions: SelectValue[] = [
-  { label: "発展古典", value: "発展古典" },
-  { label: "標準古典", value: "標準古典" },
-  { label: "体育概論", value: "体育概論" },
-  { label: "基礎英語", value: "基礎英語" },
-  { label: "数学Ⅲ", value: "数学Ⅲ" },
-  { label: "数学演習", value: "数学演習" },
-];
-
-export const lineJOptions: SelectValue[] = [
-  { label: "数学IA演習", value: "数学IA演習" },
-  { label: "受験家庭", value: "受験家庭" },
-  { label: "受験日本史", value: "受験日本史" },
-  { label: "受験世界史", value: "受験世界史" },
-  { label: "受験政経", value: "受験政経" },
-  { label: "物理演習", value: "物理演習" },
-  { label: "化学演習", value: "化学演習" },
-  { label: "生物演習", value: "生物演習" },
-  { label: "物理", value: "物理" },
-  { label: "化学", value: "化学" },
-  { label: "生物", value: "生物" },
-];
-
-export const lineKOptions: SelectValue[] = [
-  { label: "実用国語", value: "実用国語" },
-  { label: "数学ⅡB演習", value: "数学ⅡB演習" },
-  { label: "音楽理論", value: "音楽理論" },
-  { label: "芸術美術", value: "芸術美術" },
-  { label: "受験日本史", value: "受験日本史" },
-  { label: "受験世界史", value: "受験世界史" },
-  { label: "受験政経", value: "受験政経" },
-  { label: "物理演習", value: "物理演習" },
-  { label: "化学演習", value: "化学演習" },
-  { label: "生物演習", value: "生物演習" },
-  { label: "物理", value: "物理" },
-  { label: "化学", value: "化学" },
-  { label: "生物", value: "生物" },
-];
-
-export const lineLOptions: SelectValue[] = [
-  { label: "日本史", value: "日本史" },
-  { label: "英語長文", value: "英語長文" },
-  { label: "受験英語", value: "受験英語" },
-  { label: "英文講読", value: "英文講読" },
-];
+export const subjectOptions: SubjectOptions = {
+  h: [
+    { label: "発展現代文", value: "発展現代文" },
+    { label: "標準現代文", value: "標準現代文" },
+    { label: "実践英会話", value: "実践英会話" },
+    { label: "数学Ⅲ", value: "数学Ⅲ" },
+    { label: "数学演習", value: "数学演習" },
+  ],
+  i: [
+    { label: "発展古典", value: "発展古典" },
+    { label: "標準古典", value: "標準古典" },
+    { label: "体育概論", value: "体育概論" },
+    { label: "基礎英語", value: "基礎英語" },
+    { label: "数学Ⅲ", value: "数学Ⅲ" },
+    { label: "数学演習", value: "数学演習" },
+  ],
+  j: [
+    { label: "数学IA演習", value: "数学IA演習" },
+    { label: "受験家庭", value: "受験家庭" },
+    { label: "受験日本史", value: "受験日本史" },
+    { label: "受験世界史", value: "受験世界史" },
+    { label: "受験政経", value: "受験政経" },
+    { label: "物理演習", value: "物理演習" },
+    { label: "化学演習", value: "化学演習" },
+    { label: "生物演習", value: "生物演習" },
+    { label: "物理", value: "物理" },
+    { label: "化学", value: "化学" },
+    { label: "生物", value: "生物" },
+  ],
+  k: [
+    { label: "実用国語", value: "実用国語" },
+    { label: "数学ⅡB演習", value: "数学ⅡB演習" },
+    { label: "音楽理論", value: "音楽理論" },
+    { label: "芸術美術", value: "芸術美術" },
+    { label: "受験日本史", value: "受験日本史" },
+    { label: "受験世界史", value: "受験世界史" },
+    { label: "受験政経", value: "受験政経" },
+    { label: "物理演習", value: "物理演習" },
+    { label: "化学演習", value: "化学演習" },
+    { label: "生物演習", value: "生物演習" },
+    { label: "物理", value: "物理" },
+    { label: "化学", value: "化学" },
+    { label: "生物", value: "生物" },
+  ],
+  l: [
+    { label: "日本史", value: "日本史" },
+    { label: "英語長文", value: "英語長文" },
+    { label: "受験英語", value: "受験英語" },
+    { label: "英文講読", value: "英文講読" },
+  ],
+};
 
 export const holders = {
   1: [

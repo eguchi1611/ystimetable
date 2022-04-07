@@ -1,4 +1,4 @@
-type SelectValue = {
+type Subject = {
   label: string;
   value: any;
 };
@@ -13,4 +13,21 @@ type LineData = {
   l: string;
 };
 
-type LevelType = 1 | 2 | 3 | 4 | 5 | 7 | 10 | 13;
+type SubjectOptions = {
+  h: Subject[];
+  i: Subject[];
+  j: Subject[];
+  k: Subject[];
+  l: Subject[];
+};
+
+type TimetableSet = {
+  1: Holder;
+  2: Holder;
+  3: Holder;
+  4: Holder;
+  5: Holder;
+  7: Holder;
+  10: Holder;
+  13: Holder;
+};

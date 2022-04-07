@@ -9,7 +9,7 @@ import {
 
 interface Props<S> {
   state: [S, Dispatch<SetStateAction<S>>];
-  options: SelectValue[];
+  options: Subject[];
   label: string;
 }
 

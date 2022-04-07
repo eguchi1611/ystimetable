@@ -8,20 +8,12 @@ import {
 } from "@mui/material";
 import Input from "./components/Input";
 import Timetable from "./components/Timetable";
-import {
-  holders,
-  levelOptions,
-  lineHOptions,
-  lineIOptions,
-  lineJOptions,
-  lineKOptions,
-  lineLOptions,
-} from "./props";
+import { holders, levelOptions, subjectOptions } from "./props";
 
 function App() {
   const theme = createTheme();
 
-  const [level, setLevel] = useState<LevelType | undefined>();
+  const [level, setLevel] = useState<keyof TimetableSet | undefined>();
   const [lineH, setlineH] = useState<string | undefined>();
   const [lineI, setlineI] = useState<string | undefined>();
   const [lineJ, setlineJ] = useState<string | undefined>();
@@ -46,27 +38,27 @@ function App() {
           />
           <Input
             state={[lineH, setlineH]}
-            options={lineHOptions}
+            options={subjectOptions.h}
             label="H帯を選択"
           />
           <Input
             state={[lineI, setlineI]}
-            options={lineIOptions}
+            options={subjectOptions.i}
             label="I帯を選択"
           />
           <Input
             state={[lineJ, setlineJ]}
-            options={lineJOptions}
+            options={subjectOptions.j}
             label="J帯を選択"
           />
           <Input
             state={[lineK, setlineK]}
-            options={lineKOptions}
+            options={subjectOptions.k}
             label="K帯を選択"
           />
           <Input
             state={[lineL, setlineL]}
-            options={lineLOptions}
+            options={subjectOptions.l}
             label="L帯を選択"
           />
           {level && lineH && lineI && lineJ && lineK && lineL && (
